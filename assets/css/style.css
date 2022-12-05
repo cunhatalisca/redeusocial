@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #23232e;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.nav-item {
+    font-size: 40px;
+    margin: 0 50px;
+}
+
+.nav-item:hover {
+    transition: 0.5s;
+    opacity: 0.1;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    margin-top: 2rem;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.items-post {
+    margin-left: auto;
+    height: 5rem;
+    width: 75%;
+    display: flex;
+}
+
+.perfil {
+    top: 0;
+    height: 30px;
+    width: 30px;
+}
+
+#icone-post1 {
+    padding: 5px;
+    margin-top: 7rem;
+    display: flex;
+}
+
+
+.main-sec {
+    height: 15rem;
+    border: 1px solid black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.sec {
+    margin: 70px;
+    display: flex;
+    width: 30em;
+    gap: 5px;
+}
+
+.text {
+    margin-left: 3rem;
+}
+
+.text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.main-sec h1 {
+    color: black;
+}
+
+.btn {
+    align-items: center;
+    margin-top: 100px;
+    height: 10vh;
+    width: 10rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.btnflex {
+    margin-top: 10px;
+    justify-content: center;
+    bottom: 0;
+}
+
+.btnflex button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #0187a7;
+    font-size: 20px;
+    height: 8vh;
+    width: 6rem;
+    border-radius: 10px;
+}
+
+.btnflex button:hover {
+    background-color:  #229fbe;
+    color: rgb(226, 223, 223);
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 25vh;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 10px;
+    width: 50%;
+}
+
+
+
+
+.activate-modal {
+    display: flex;
+}
+
+.activate-modal .modal {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  span {
+    margin: 10px auto;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #contain-post1 {
+    border: 0.5px solid black;
+    display: flex;
+    height: 40rem;
+    flex-direction: column;
+  }
+
+  .img-post {
+    margin: auto;
+  }
+
+  #contain-post2 {
+    display: flex;
+    height: 40rem;
+    flex-direction: column;
+  }
+
+  .img {
+    margin: auto;
+  }
+
+  .ipost {
+    display: flex;
+    margin-left: auto;
+    height: 5rem;
+    width: 75%;
+
+    margin-top: 7rem;
+    border: 1px solid black;
+}
+
+.ip {
+    
+    display: flex;
+}
+
+#ip1 {
+    justify-items: baseline;
+  }
+  
+  .btnOK {
+   background-color: blue!important;
+  }
+  
+  .btnClose {
+    background-color: brown!important;
+   }
+  
+   @media (max-width: 500px) {
+    .modal {
+      padding: 10px;
+      width: 80%;
+    } 
+}  
+  
+    span, .btns button {
+      font-size: smaller;
+    }
+
+@media screen and (max-width: 730px) {
+    .main-sec {
+        height: 27rem;
+    }
+
+    .btnflex {
+        bottom: 2rem;
+        right: 13rem;
+        position: absolute;
+        margin-top: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-post {
+        height: 25rem;
+        width: 90vw;
+    }
+
+    #img-post1 {
+        height: 25rem;
+        width: 90vw;
+    }
+     
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        margin-top: 2rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

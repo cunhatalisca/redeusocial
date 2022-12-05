@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="imagens/Logotipo-Universidade-Catolica-Branco 3.png" type="image/x-icon">
+    <title>Ucsocial</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/Logotipo-Universidade-Catolica-Branco 3.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link"><h3>Instituição</h3></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><h3>Biblioteca</h3></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> <h3>Acesso AVA</h3></a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Instituição</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Biblioteca</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Acesso AVA</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+      <section class="main-sec">
+        <div class="sec">
+            <div class="user"><img src="imagens/do-utilizador 5.png" alt=""></div>
+            <div class="text"><h1 class="text-post">"Whats happening?"</h1></div>
+            <hr>
+            <div class="post"></div>
+        </div>
+        <div class="btn">
+            <div class="btnflex">
+                <button id = "but" onclick="openModal()">Post</button>
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+              <h2>Faça sua postagem!</h2>
+              <hr />
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                 ever since the 1500s, when an unknown printer took a galley of 
+                 type and scrambled it to make a type specimen book. 
+              </span>
+              <hr />
+              <div class="btns">
+                <button class="btnOK" onclick="removeModal()()">Postar</button>
+                <button class="btnClose" onclick="removeModal()()">Fechar</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    </main>
+
+    <div id="contain-post1">
+        <div class="i-resp">
+            <div class="items-post">
+                <div id="icone-post1">
+                        <img src="imagens/do-utilizador 5.png" alt="" class="perfil">
+                        <p id="nome-post1">Diogo Ribeiro</p>
+                        <p id="arroba-post1">@diogoramos_  12h</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-post">
+            <img id="post1" src="imagens/festaFaculdade 3.png" alt="">
+        </div>
+        
+    </div>
+    <div id="contain-post2">
+        <div class="i-resp">
+            <div class="items-post">
+                <div class="icone-post1">
+                    <div id="icone-post1">
+                            <img src="imagens/do-utilizador 5.png" alt="" class="perfil">
+                            <p id="namep1">Diogo Ribeiro</p>
+                            <p id="ap1">@diogoramos_  12h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img id="img-post1" src="imagens/imagemFacul 1.png" alt="">
+        </div>
+        
+    </div>
+
+
+    <hr>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
