@@ -293,7 +293,8 @@ hr {
     }
 
     .btnflex {
-        bottom: 2rem;
+        bottom: 6rem;
+        width: 10px;
         right: 13rem;
         position: absolute;
         margin-top: 5px;
@@ -307,6 +308,11 @@ hr {
     }
 
     #img-post1 {
+        height: 25rem;
+        width: 90vw;
+    }
+
+    #post1 {
         height: 25rem;
         width: 90vw;
     }
